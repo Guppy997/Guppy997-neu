@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <linearGradient id="xp-bar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0058e6" />
+      <stop offset="15%" stop-color="#3a93ff" />
+      <stop offset="100%" stop-color="#0043aa" />
+    </linearGradient>
+  </defs>
+  
+  <style>
+    .window-bg { fill: #000000; }
+    .window-border { fill: none; stroke: #0054E3; stroke-width: 6px; rx: 8px; ry: 8px; }
+    .titlebar { fill: url(#xp-bar); }
+    .title-text { font-family: 'Tahoma', sans-serif; font-size: 14px; font-weight: bold; fill: #FFFFFF; }
+    .cmd-text { font-family: 'Consolas', 'Courier New', monospace; font-size: 16px; fill: #CCCCCC; }
+    
+    /* Animation: Macht Text im richtigen Moment sichtbar */
+    .hidden { opacity: 0; }
+    .pop-in { animation: popIn 0.1s forwards; }
+    @keyframes popIn { to { opacity: 1; } }
+
+    /* Timing für die Command-Prompts (C:\Users\Guppy>) */
+    .p1 { animation-delay: 0.8s; }
+    .p2 { animation-delay: 3.5s; }
+    .p3 { animation-delay: 6.0s; }
+
+    /* Timing für die getippten Befehle */
+    .c1 { animation-delay: 1.0s; }
+    .c2 { animation-delay: 3.7s; }
+    .c3 { animation-delay: 6.2s; }
+
+    /* Timing für die System-Antworten (Ploppen nach dem Tippen auf) */
+    .out1 { animation-delay: 2.5s; }
+    .out2 { animation-delay: 5.0s; }
+    .out3 { animation-delay: 5.2s; }
+    .out4 { animation-delay: 7.7s; }
+    .out5 { animation-delay: 7.8s; }
+    .out6 { animation-delay: 7.9s; }
+    .out7 { animation-delay: 8.0s; }
+    .out8 { animation-delay: 8.1s; }
+
+    /* Der finale, blinkende Cursor */
+    .final { animation-delay: 9.0s; }
+    .cursor { animation: popIn 0.1s forwards 9.0s, blink 1s infinite 9.1s; opacity: 0; fill: #CCCCCC; }
+    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+  </style>
+
+  <rect x="3" y="3" width="794" height="474" class="window-bg" />
+  
+  <path d="M 3 10 Q 3 3 10 3 L 790 3 Q 797 3 797 10 L 797 32 L 3 32 Z" class="titlebar" />
+  <rect x="3" y="3" width="794" height="474" class="window-border" />
+
+  <rect x="10" y="8" width="16" height="16" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="13" y="20" font-family="monospace" font-size="10" fill="#FFFFFF" font-weight="bold">C:\</text>
+  
+  <text x="35" y="22" class="title-text">C:\WINDOWS\system32\cmd.exe</text>
+
+  <rect x="765" y="7" width="22" height="21" rx="3" fill="#E36551" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="771" y="23" font-family="sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">X</text>
+
+  <text x="15" y="65" class="cmd-text">Microsoft Windows XP [Version 5.1.2600]</text>
+  <text x="15" y="85" class="cmd-text">(C) Copyright 1985-2001 Microsoft Corp.</text>
+
+  <text x="15" y="135" class="cmd-text hidden pop-in p1">C:\Users\Guppy&gt;</text>
+  <text x="170" y="135" class="cmd-text hidden pop-in c1">init_vibe_coding.exe</text>
+  <rect x="170" y="120" width="250" height="20" class="window-bg">
+    <animate attributeName="width" from="250" to="0" begin="1s" dur="1.2s" fill="freeze" />
+    <animate attributeName="x" from="170" to="420" begin="1s" dur="1.2s" fill="freeze" />
+  </rect>
+  
+  <text x="15" y="155" class="cmd-text hidden pop-in out1">[OK] Vibe Coding Protocol Initiated...</text>
+
+  <text x="15" y="205" class="cmd-text hidden pop-in p2">C:\Users\Guppy&gt;</text>
+  <text x="170" y="205" class="cmd-text hidden pop-in c2">start luna_core.bat</text>
+  <rect x="170" y="190" width="250" height="20" class="window-bg">
+    <animate attributeName="width" from="250" to="0" begin="3.7s" dur="1s" fill="freeze" />
+    <animate attributeName="x" from="170" to="420" begin="3.7s" dur="1s" fill="freeze" />
+  </rect>
+
+  <text x="15" y="225" class="cmd-text hidden pop-in out2">[OK] Booting Luna Assistant System...</text>
+  <text x="15" y="245" class="cmd-text hidden pop-in out3">[OK] Mounting k3s Cluster...</text>
+
+  <text x="15" y="295" class="cmd-text hidden pop-in p3">C:\Users\Guppy&gt;</text>
+  <text x="170" y="295" class="cmd-text hidden pop-in c3">fetch_operator_data.sh</text>
+  <rect x="170" y="280" width="250" height="20" class="window-bg">
+    <animate attributeName="width" from="250" to="0" begin="6.2s" dur="1.2s" fill="freeze" />
+    <animate attributeName="x" from="170" to="420" begin="6.2s" dur="1.2s" fill="freeze" />
+  </rect>
+
+  <text x="15" y="335" class="cmd-text hidden pop-in out4">  &gt; IDENTITY:    Guppy</text>
+  <text x="15" y="355" class="cmd-text hidden pop-in out5">  &gt; ROLE:        Marketing Student</text>
+  <text x="15" y="375" class="cmd-text hidden pop-in out6">  &gt; FOCUS:       Sovereign AI &amp; European Open-Source</text>
+  <text x="15" y="395" class="cmd-text hidden pop-in out7">  &gt; NETWORK:     Self-Hosted Bare-Metal</text>
+  <text x="15" y="415" class="cmd-text hidden pop-in out8">  &gt; STACK:       Python, Docker, k3s, fail2ban</text>
+
+  <text x="15" y="455" class="cmd-text hidden pop-in final">C:\Users\Guppy&gt; <tspan class="cursor">_</tspan></text>
+</svg>
