@@ -11,7 +11,7 @@
 Hey, I'm **Aaron**, 28, living in **Cologne**. I study **marketing** and am a working student at **REWE Group**.
 After hours I build things that run on my own hardware.
 
-- 🎓 **Marketing student**: positioning, branding and the psychology of a good click
+- 🎓 **Marketing student** with a focus on **performance marketing**: campaigns, data and what actually makes people buy, online and in store
 - 🤖 **AI enthusiast**: I run my own assistant, *Luna*, locally instead of in someone else's cloud
 - 🔐 **Digital sovereignty**: own your data, own your infrastructure, avoid lock-in
 - 🏠 **Homelab & self-hosting**: Raspberry Pi 5, k3s, GitOps, Tailscale
@@ -34,7 +34,7 @@ My own AI assistant on hardware I own. A Raspberry Pi 5 running k3s, deployed vi
 **🐔 Rigobert**<br>
 <sub>ESP32 · FIRMWARE</sub>
 
-An ESP32 that opens and closes the chicken coop on schedule. ESP-IDF firmware in C, a small web UI and tests that run the real firmware in QEMU. Built with a friend.
+An ESP32 that opens and closes the chicken coop on schedule. ESP-IDF firmware in C, a small web UI and tests that run the real firmware in QEMU. Built together with my brother.
 
 <!-- add repo link when public -->
 </td>
@@ -43,7 +43,7 @@ An ESP32 that opens and closes the chicken coop on schedule. ESP-IDF firmware in
 **💒 WeddingKids**<br>
 <sub>PWA · IN PRODUCTION</sub>
 
-Planning app for a wedding team: bookings, staff scheduling, availability polls and push notifications. React + TypeScript PWA with an Express/SQLite backend.
+Built for **WeddingKids**, a team that looks after children at weddings, to make running their business easier than before: bookings, staff scheduling, availability polls and push notifications in one app. React + TypeScript PWA with an Express/SQLite backend.
 
 <!-- add repo link when public -->
 </td>
