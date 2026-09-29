@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 28" width="1000" height="28" role="img" aria-label="divider">
+  <defs>
+    <linearGradient id="tube" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffa21f" stop-opacity="0"/>
+      <stop offset=".12" stop-color="#ffa21f"/>
+      <stop offset=".5" stop-color="#ff2020"/>
+      <stop offset=".88" stop-color="#9b30ff"/>
+      <stop offset="1" stop-color="#9b30ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- glow from stacked translucent bars: no blur filter, nothing to recompute -->
+  <rect x="0" y="4" width="1000" height="20" rx="10" fill="url(#tube)" opacity=".06"/>
+  <rect x="0" y="8" width="1000" height="12" rx="6" fill="url(#tube)" opacity=".12"/>
+  <rect x="0" y="10.5" width="1000" height="7" rx="3.5" fill="url(#tube)" opacity=".25"/>
+  <rect x="0" y="12.5" width="1000" height="3" rx="1.5" fill="url(#tube)"/>
+  <path d="M500 6.5 L507.5 14 L500 21.5 L492.5 14 Z" fill="#fff1d6" stroke="#ff3b3b" stroke-width="1.5"/>
+</svg>
